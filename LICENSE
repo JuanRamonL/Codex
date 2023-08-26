@@ -1,34 +1,21 @@
-# Proyecto final.
+MIT License
 
-Este es un repositorio de ejemplo que contiene código genérico. A continuación, se describen algunas pautas para contribuir al repositorio.
+Copyright (c) 2023 JuanRamonL
 
-## Contribuciones
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Para contribuir a este repositorio, sigue estas pautas:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### Modificaciones Pequeñas
-
-Si estás realizando modificaciones pequeñas, como correcciones de errores o cambios menores, sigue estos pasos:
-
-1. En tu rama local, realiza tus cambios.
-2. A la hora de confirmar los cambios, utiliza el formato de mensaje: `add: descripción de tu cambio`.
-3. Realiza un `git push` para subir tus cambios a tu rama en el repositorio remoto.
-
-### Modificaciones Grandes
-
-Si estás trabajando en modificaciones más grandes que afectan a múltiples archivos o características, sigue estos pasos:
-
-1. Crea una nueva rama en el repositorio remoto para tus cambios.
-2. Realiza tus modificaciones en esta nueva rama.
-3. A la hora de confirmar los cambios, utiliza el formato de mensaje: `change: descripción de tus cambios`.
-4. Crea un "Pull Request" (PR) hacia la rama principal del repositorio.
-5. Espera a que otros revisen y aprueben tu PR.
-6. Una vez aprobado, tu PR será fusionado con la rama principal.
-
-## Notas Importantes
-
-- Asegúrate de mantener tus ramas actualizadas con los últimos cambios de la rama principal usando `git pull`.
-- Siempre trabaja en ramas separadas para evitar conflictos y para que las revisiones sean más fáciles.
-- Si tienes dudas o preguntas, siéntete libre de abrir un "Issue" en este repositorio.
-
-¡Gracias por contribuir!
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
