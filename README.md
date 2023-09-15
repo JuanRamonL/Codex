@@ -1,6 +1,6 @@
-# React + Vite
-
 # Proyecto final.
+
+#Lenguajes React + Vite
 
 Este es un repositorio de ejemplo que contiene código genérico. A continuación, se describen algunas pautas para contribuir al repositorio.
 
