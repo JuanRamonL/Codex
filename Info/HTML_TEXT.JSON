@@ -1,0 +1,80 @@
+{
+  "p": {
+    "description": "Define un párrafo de texto.",
+    "attributes": {}
+  },
+  "h1": {
+    "description": "Define un encabezado de nivel 1.",
+    "attributes": {}
+  },
+  "h2": {
+    "description": "Define un encabezado de nivel 2.",
+    "attributes": {}
+  },
+  "h3": {
+    "description": "Define un encabezado de nivel 3.",
+    "attributes": {}
+  },
+  "h4": {
+    "description": "Define un encabezado de nivel 4.",
+    "attributes": {}
+  },
+  "h5": {
+    "description": "Define un encabezado de nivel 5.",
+    "attributes": {}
+  },
+  "h6": {
+    "description": "Define un encabezado de nivel 6.",
+    "attributes": {}
+  },
+  "strong": {
+    "description": "Define texto importante con énfasis.",
+    "attributes": {}
+  },
+  "em": {
+    "description": "Define texto enfatizado.",
+    "attributes": {}
+  },
+  "u": {
+    "description": "Define texto subrayado.",
+    "attributes": {}
+  },
+  "del": {
+    "description": "Define texto eliminado o tachado.",
+    "attributes": {}
+  },
+  "ins": {
+    "description": "Define texto insertado o subrayado.",
+    "attributes": {}
+  },
+  "blockquote": {
+    "description": "Define una cita de bloque.",
+    "attributes": {}
+  },
+  "q": {
+    "description": "Define una cita en línea.",
+    "attributes": {}
+  },
+  "abbr": {
+    "description": "Define una abreviatura o acrónimo.",
+    "attributes": {
+      "title": "Proporciona información adicional sobre la abreviatura o acrónimo."
+    }
+  },
+  "sub": {
+    "description": "Define texto subíndice.",
+    "attributes": {}
+  },
+  "sup": {
+    "description": "Define texto superíndice.",
+    "attributes": {}
+  },
+  "code": {
+    "description": "Define texto de código o monoespaciado.",
+    "attributes": {}
+  },
+  "pre": {
+    "description": "Define un bloque de texto preformateado.",
+    "attributes": {}
+  }
+}

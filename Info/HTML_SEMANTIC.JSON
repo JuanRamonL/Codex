@@ -1,0 +1,58 @@
+{
+    "header": {
+    "description": "Define la cabecera de una sección o documento.",
+    "attributes": {}
+    },
+    "nav": {
+    "description": "Define la navegación principal de una página.",
+    "attributes": {}
+    },
+    "main": {
+    "description": "Define el contenido principal de una página.",
+    "attributes": {}
+        },
+    "article": {
+    "description": "Define un artículo independiente dentro de un documento.",
+    "attributes": {}
+    },
+    "section": {
+    "description": "Define una sección genérica dentro de un documento.",
+    "attributes": {}
+    },
+    "aside": {
+    "description": "Define contenido secundario o de barra lateral en un documento.",
+    "attributes": {}
+    },
+    "footer": {
+    "description": "Define el pie de página de una sección o documento.",
+    "attributes": {}
+    },
+    "figure": {
+    "description": "Define contenido multimedia con una descripción.",
+    "attributes": {}
+    },
+    "figcaption": {
+    "description": "Define una descripción para una figura en multimedia.",
+    "attributes": {}
+    },
+    "time": {
+    "description": "Define una fecha o hora en un formato específico.",
+    "attributes": {
+        "datetime": "Especifica la fecha y hora en un formato estándar."
+    }
+    },
+    "mark": {
+    "description": "Resalta o marca un texto en el contenido.",
+    "attributes": {}
+    },
+    "details": {
+    "description": "Define detalles adicionales que pueden mostrarse u ocultarse.",
+    "attributes": {
+        "open": "Especifica si los detalles deben mostrarse inicialmente (true/false)."
+    }
+    },
+    "summary": {
+    "description": "Define un resumen para los detalles.",
+    "attributes": {}
+    }
+}

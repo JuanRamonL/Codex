@@ -1,0 +1,42 @@
+{
+    "img": {
+    "description": "Muestra una imagen.",
+    "attributes": {
+        "src": "Especifica la fuente de la imagen (URL de la imagen).",
+        "alt": "Texto alternativo para la imagen (para accesibilidad).",
+        "width": "Ancho de la imagen en píxeles.",
+        "height": "Altura de la imagen en píxeles.",
+        "title": "Título de la imagen (para información adicional)."
+    }
+    },
+    "figure": {
+    "description": "Define una figura con una imagen.",
+    "attributes": {}
+    },
+    "figcaption": {
+    "description": "Define una descripción para una figura.",
+    "attributes": {}
+    },
+    "map": {
+    "description": "Define un mapa de imagen para vincular áreas de una imagen con enlaces.",
+    "attributes": {
+        "name": "Nombre del mapa de imagen."
+    }
+    },
+    "area": {
+    "description": "Define una zona dentro de un mapa de imagen.",
+    "attributes": {
+        "shape": "Forma de la zona (rect, circle, poly).",
+        "coords": "Coordenadas de la zona.",
+        "href": "URL de destino al hacer clic en la zona.",
+        "alt": "Texto alternativo para la zona (para accesibilidad)."
+    }
+    },
+    "svg": {
+    "description": "Define un gráfico vectorial escalable (SVG).",
+    "attributes": {
+        "width": "Ancho del SVG en píxeles.",
+        "height": "Altura del SVG en píxeles."
+    }
+    }
+}
