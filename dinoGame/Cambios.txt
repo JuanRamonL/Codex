@@ -1,0 +1,7 @@
+Modificar el sprit del personaje principal, mapa y obstaculos.
+
+Agregar funcion reiniciar, juego. Al chocar contra un obstaculo se termina el juego y no hay manera de reinniciar. 
+
+Agregar inicio y fin del mapa.
+
+Agregar funcionalidades recompensas.
