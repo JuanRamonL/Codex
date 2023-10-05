@@ -95,11 +95,18 @@ function Update() {
     velY -= gravedad * deltaTime;
 }
 
+//Movimiento robotsabrio
+
 function HandleKeyDown(ev){
     if(ev.keyCode == 32){
         Saltar();
     }
 }
+
+document.addEventListener("click", function() {
+    Saltar();
+});
+
 
 function Saltar(){
     if(dinoPosY === sueloY){
@@ -108,6 +115,9 @@ function Saltar(){
         dino.classList.remove("dino-corriendo");
     }
 }
+
+//fin movimiento robotsabrio
+
 
 function MoverDinosaurio() {
     dinoPosY += velY * deltaTime;
