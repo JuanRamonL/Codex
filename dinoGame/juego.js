@@ -197,14 +197,14 @@ function MoverNubes() {
 function GanarPuntos() {
     score++;
     textoScore.innerText = score;
-    if(score == 5){
-        gameVel = 1.5;
+    if(score == 10){
+        gameVel = 1.2;
         contenedor.classList.add("mediodia");
-    }else if(score == 10) {
-        gameVel = 2;
+    }else if(score == 15) {
+        gameVel = 1.5;
         contenedor.classList.add("tarde");
     } else if(score == 20) {
-        gameVel = 3;
+        gameVel = 2;
         contenedor.classList.add("noche");
     }
     suelo.style.animationDuration = (3/gameVel)+"s";

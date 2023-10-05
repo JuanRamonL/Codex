@@ -17,7 +17,7 @@ body{
 
     position: relative;
 
-    background: linear-gradient( #80BA00, #131F2B, #131F2B);
+    background-color:#131F2B ;
     transition: background-color 1s linear;
     overflow: hidden;
 }
@@ -29,7 +29,7 @@ body{
     bottom: 22px;
     left: 42px;
     z-index: 2;
-    background: url(./img/dino.png) repeat-x 0px 0px;
+    background: url(./img/robo.png) repeat-x 0px 0px;
     
     background-size: 336px 84px;
     background-position-x:0px ;
@@ -51,7 +51,7 @@ body{
     bottom: 0px;
     left:0px;
 
-    background: url(./img/suelo.png) repeat-x 0px 0px;
+    background: url(./img/suelo3.png) repeat-x 0px 0px;
     background-size: 50% 42px;
 }
 
@@ -71,21 +71,24 @@ body{
 }
 
 .cactus{
-    width: 46px;
-    height: 96px;
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
 
     position: absolute;
-    bottom: 16px;
+    bottom: 0px;
     left: 600px;
     z-index: 1;
 
-    background: url(img/cactus1.png) no-repeat;
+    background: url(img/cactus11.png) no-repeat;
 }
 .cactus2{
-    width: 98px;
-    height: 66px;
+    border-radius: 20px;
+    width: 100px;
+    height: 120px;
+    bottom: 0px;
 
-    background: url(img/cactus2.png) no-repeat;
+    background: url(img/firewell.png) no-repeat;
 }
 
 .game-over{
@@ -99,6 +102,17 @@ body{
     font-size: 30px;
     font-family: Verdana;
     font-weight: 700;
+}
+
+.nube{
+    width: 92px;
+    height: 26px;
+
+    position: absolute;
+    z-index: 0;
+
+    background: url(img/nube.png) no-repeat;
+    background-size: 92px 26px;
 }
 
 @keyframes AnimarPersonaje {
