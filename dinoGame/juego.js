@@ -12,9 +12,14 @@ if(document.readyState === "complete" || document.readyState === "interactive"){
 
 function Init() {
     time = new Date();
-    Start();
-    Loop();
+    if(inicio= true){
+        Start();
+        Loop();
+    }    
+    
 }
+
+
 
 function Loop() {
     deltaTime = (new Date() - time) / 1000;
@@ -24,6 +29,11 @@ function Loop() {
 }
 
 //****** GAME LOGIC ********//
+
+var inicio = false;
+
+var reinicio = document.querySelector(".reinicio");
+let choqueObstaculo = document.getElementById("choque-obstaculo");
 
 var sueloY = 22;
 var velY = 0;
@@ -60,6 +70,7 @@ var dino;
 var textoScore;
 var suelo;
 var gameOver;
+
 
 function Start() {
     gameOver = document.querySelector(".game-over");
@@ -145,10 +156,21 @@ function DecidirCrearNubes() {
     }
 }
 
+/**
+ * Esta funcion reinicia el juego al hacer click en el boton con la clase reinicio
+ */
+reinicio.addEventListener("click", function(){
+    location.reload();
+    return false;
+})
+
+/**
+ * Esta funcion crea un obstaculo y lo añade al array de obstaculos
+ */
 function CrearObstaculo() {
     var obstaculo = document.createElement("div");
     contenedor.appendChild(obstaculo);
-    obstaculo.classList.add("cactus");
+    obstaculo.classList.add("enemigo1");
     if(Math.random() > 0.5) obstaculo.classList.add("cactus2");
     obstaculo.posX = contenedor.clientWidth;
     obstaculo.style.left = contenedor.clientWidth+"px";
@@ -222,12 +244,32 @@ function DetectarColision() {
             break; //al estar en orden, no puede chocar con más
         }else{
             if(IsCollision(dino, obstaculos[i], 10, 30, 15, 20)) {
-                GameOver();
-            }
+                console.log(obstaculos[i].classList.value) 
+                if(obstaculos[i].classList.contains("cactus2")){
+                    choqueObstaculo.innerText = "Te topaste con un FireWall, no puedes continuar";
+                    console.log(choqueObstaculo)
+                }else{
+                    
+                    choqueObstaculo.innerText ="Te topaste con un ataque DoS, El servicio fue interrumpido.";
+                    console.log(choqueObstaculo)
+                    
+                }
+            GameOver();
+            }    
         }
     }
 }
 
+/**
+ * esta funcion detecta si hay colision entre el dinosaurio y el obstaculo
+ * @param {} a 
+ * @param {*} b 
+ * @param {*} paddingTop 
+ * @param {*} paddingRight 
+ * @param {*} paddingBottom 
+ * @param {*} paddingLeft 
+ * @returns 
+ */
 function IsCollision(a, b, paddingTop, paddingRight, paddingBottom, paddingLeft) {
     var aRect = a.getBoundingClientRect();
     var bRect = b.getBoundingClientRect();

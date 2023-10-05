@@ -70,7 +70,7 @@ body{
     text-align: right;
 }
 
-.cactus{
+.enemigo1{
     width: 84px;
     height: 84px;
     position: absolute;
@@ -87,7 +87,13 @@ body{
     animation: AnimarVirus 0.50s steps(4) infinite
 }
 .cactus2{
-    border-radius: 20px;
+    position: absolute;
+    bottom: 22px;
+    left: 42px;
+    z-index: 2;    
+    background-size: 336px 84px;
+    background-position-x:0px ;
+
     width: 100px;
     height: 120px;
     bottom: 0px;
@@ -117,6 +123,49 @@ body{
 
     background: url(img/nube.png) no-repeat;
     background-size: 92px 26px;
+}
+
+.game-over{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+
+
+    text-align: center;
+    color: #7e928b;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+    background-color: rgba(19, 31, 43, .6);
+    
+    z-index: 10000;
+
+}
+
+#choque-obstaculo{
+    font-size: 12px;
+    color: #B6E326;
+    margin: 8px 0px;
+}
+
+
+.reinicio{
+    padding: 4px 16px;
+    border-radius: 16px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 800;
+    background-color:#7e928b;
+    color: #faffe9;
+}
+.reinicio:hover{
+    
+    background-color: #B6E326;
+    color: #7e928b;
+    cursor: pointer;
 }
 
 @keyframes AnimarPersonaje {
