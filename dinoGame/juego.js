@@ -24,8 +24,11 @@ function Init() {
 function Loop() {
     deltaTime = (new Date() - time) / 1000;
     time = new Date();
-    Update();
-    requestAnimationFrame(Loop);
+
+    if (!ganasteElJuego) {
+        Update();
+        requestAnimationFrame(Loop);
+    }
 }
 
 //****** GAME LOGIC ********//
@@ -33,6 +36,7 @@ function Loop() {
 var inicio = false;
 
 var reinicio = document.querySelector(".reinicio");
+//var verLecciones = document.querySelector(".ver-lecciones");
 let choqueObstaculo = document.getElementById("choque-obstaculo");
 
 var sueloY = 22;
@@ -44,7 +48,7 @@ var dinoPosX = 42;
 var dinoPosY = sueloY; 
 
 var sueloX = 0;
-var velEscenario = 1280/3;
+var velEscenario = 1280/4;
 var gameVel = 1;
 var score = 0;
 
@@ -57,19 +61,20 @@ var tiempoObstaculoMax = 1.8;
 var obstaculoPosY = 16;
 var obstaculos = [];
 
-var tiempoHastaNube = 0.5;
-var tiempoNubeMin = 0.7;
-var tiempoNubeMax = 2.7;
-var maxNubeY = 270;
-var minNubeY = 100;
-var nubes = [];
-var velNube = 0.5;
+let tiempoHastaNube = 0.5;
+let tiempoNubeMin = 0.7;
+let tiempoNubeMax = 2.7;
+let maxNubeY = 270;
+let minNubeY = 100;
+let nubes = [];
+let velNube = 0.5;
 
-var contenedor;
-var dino;
-var textoScore;
-var suelo;
-var gameOver;
+let contenedor;
+let dino;
+let textoScore;
+let suelo;
+let gameOver;
+let ganasteElJuego = false;
 
 
 function Start() {
@@ -93,6 +98,10 @@ function Update() {
     DetectarColision();
 
     velY -= gravedad * deltaTime;
+
+    if (score == 5) {
+        Ganaste();
+    }
 }
 
 //Movimiento robotsabrio
@@ -174,6 +183,12 @@ reinicio.addEventListener("click", function(){
     return false;
 })
 
+/*verLecciones.addEventListener("click", function(){
+    location.reload();
+    return false;
+})
+*/
+
 /**
  * Esta funcion crea un obstaculo y lo añade al array de obstaculos
  */
@@ -181,7 +196,7 @@ function CrearObstaculo() {
     var obstaculo = document.createElement("div");
     contenedor.appendChild(obstaculo);
     obstaculo.classList.add("enemigo1");
-    if(Math.random() > 0.5) obstaculo.classList.add("cactus2");
+    //if(Math.random() > 0.5) obstaculo.classList.add("cactus2");
     obstaculo.posX = contenedor.clientWidth;
     obstaculo.style.left = contenedor.clientWidth+"px";
 
@@ -245,6 +260,17 @@ function GanarPuntos() {
 function GameOver() {
     Estrellarse();
     gameOver.style.display = "block";
+}
+
+/**
+ * Funcion que detecta si el marcador es mayot a 30 y si es asi, se muestra el mensaje de ganaste
+ */
+function Ganaste() {
+    ganasteElJuego = true;
+    dino.classList.remove("dino-corriendo");
+    dino.classList.add("dino-estrellado");
+    parado = true;
+    document.getElementById("ganaste").style.display = "block";
 }
 
 function DetectarColision() {

@@ -84,9 +84,6 @@ body{
     background: url(img/enemigo1.png) no-repeat;
 }
 
-.virus-envivo{
-    animation: AnimarVirus 0.50s steps(4) infinite
-}
 .cactus2{
     position: absolute;
     bottom: 22px;
@@ -134,6 +131,34 @@ body{
 
 }
 
+#ganaste{
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 75px;
+
+
+    text-align: center;
+    color: #B6E326;
+    font-size: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+    background-color: rgba(19, 31, 43, 1);
+    
+    z-index: 10000;
+
+}
+
+.codi_feliz{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+}
+
+
 #choque-obstaculo{
     font-size: 12px;
     color: #7e928b;
@@ -156,6 +181,14 @@ body{
     background-color:#7e928b;
     color: #faffe9;
     cursor: pointer;
+}
+
+.reinicio a{
+    text-decoration: none;
+    color: #7e928b;
+}
+.reinicio a:hover{
+    color: #faffe9;
 }
 
 @keyframes AnimarPersonaje {
