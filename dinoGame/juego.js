@@ -286,12 +286,12 @@ function DetectarColision() {
                     console.log(choqueObstaculo)
                 }else{
                     
-                    choqueObstaculo.innerText ="Te topaste con un ataque DoS, El servicio fue interrumpido.";
+                    choqueObstaculo.innerText ="desconectaste el cable ADSL, te quedaste sin conexión. Un cable ADSL (Asymmetric Digital Subscriber Line) es un tipo de cable de transmisión que se utiliza para proporcionar servicios de acceso a Internet de banda ancha a través de las líneas telefónicas convencionales";
                     console.log(choqueObstaculo)
                     
                 }
             GameOver();
-            }    
+            }  
         }
     }
 }
