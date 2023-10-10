@@ -99,7 +99,7 @@ function Update() {
 
     velY -= gravedad * deltaTime;
 
-    if (score == 5) {
+    if (score == 10) {
         Ganaste();
     }
 }

@@ -82,6 +82,7 @@ body{
     background-position-x:0px ;
 
     background: url(img/enemigo1.png) no-repeat;
+    animation: enemigo 0.25s steps(2) infinite;
 }
 
 .cactus2{
@@ -200,7 +201,7 @@ body{
     }
 }
 
-@keyframes AnimarVirus {
+@keyframes enemigo {
     from { 
         background-position-x: -84px; 
     }
