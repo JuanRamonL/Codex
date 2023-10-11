@@ -115,3 +115,39 @@ li {
   color: var(--clr-bg-dark);
   background-color: var(--clr-primary-hover);
 }
+
+.lesson-content {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+}
+
+.btn-ennoia-line {
+  background-color: transparent;
+  border-radius: 100px;
+  padding: 12px 0;
+  border: 2px solid var(--clr-primary);
+  transition: 0.25s;
+  color: var(--clr-primary);
+}
+
+.btn-ennoia-line:hover {
+  color: var(--clr-primary-hover);
+  border: 2px solid var(--clr-primary-hover);
+}
+
+.theme-box {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 2px solid var(--clr-primary);
+  border-radius: 15px;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-box-disabled {
+  border-color: var(--clr-light-300);
+}
